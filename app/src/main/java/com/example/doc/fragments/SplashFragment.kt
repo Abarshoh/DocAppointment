@@ -27,7 +27,7 @@ class SplashFragment : Fragment() {
         val binding = FragmentSplashBinding.inflate(inflater,container,false)
         val handler = Handler()
         handler.postDelayed({
-            findNavController().navigate(R.id.action_splashFragment_to_welcomeFragment)
+            findNavController().navigate(R.id.action_splashFragment_to_logFragment)
         },3000)
         return binding.root
     }

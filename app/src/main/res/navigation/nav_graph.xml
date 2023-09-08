@@ -11,12 +11,12 @@
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
-            android:id="@+id/action_splashFragment_to_welcomeFragment"
-            app:destination="@id/welcomeFragment" />
+            android:id="@+id/action_splashFragment_to_logFragment"
+            app:destination="@id/logFragment" />
     </fragment>
     <fragment
-        android:id="@+id/welcomeFragment"
-        android:name="com.example.doc.fragments.WelcomeFragment"
-        android:label="fragment_welcome"
-        tools:layout="@layout/fragment_welcome" />
+        android:id="@+id/logFragment"
+        android:name="com.example.doc.fragments.LogFragment"
+        android:label="fragment_log"
+        tools:layout="@layout/fragment_log" />
 </navigation>

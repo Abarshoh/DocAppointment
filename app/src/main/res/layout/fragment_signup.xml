@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragments.SignInFragment"
-    android:id="@+id/signInFragment">
+    tools:context=".fragments.SignupFragment">
 
     <ImageButton
         android:id="@+id/back"
@@ -38,7 +37,7 @@
         app:layout_constraintTop_toBottomOf="@id/moshina_image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Login to Your Account"
+        android:text="Create your account"
         android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="25sp"
@@ -65,9 +64,10 @@
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusTopEnd="10dp"
-            app:boxCornerRadiusTopStart="10dp">
+            app:boxCornerRadiusTopStart="10dp"
+            >
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/emaill"
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="Email"
@@ -88,9 +88,33 @@
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusTopEnd="10dp"
-            app:boxCornerRadiusTopStart="10dp">
+            app:boxCornerRadiusTopStart="10dp"
+            >
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/passwordl"
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Username"
+                android:inputType="textPassword"
+                android:textColor="#000"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="Password"
@@ -99,7 +123,7 @@
                 android:textSize="15sp" />
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/sign_in"
+            android:id="@+id/sign_up"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginStart="25dp"
@@ -108,7 +132,7 @@
             android:backgroundTint="#374FD6"
             android:layout_marginTop="50dp"
             android:elevation="15dp"
-            android:text="Sign In"
+            android:text="Sign Up"
             android:textAllCaps="false"
             android:textSize="17sp"/>
     </LinearLayout>
